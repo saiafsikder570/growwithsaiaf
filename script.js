@@ -17,16 +17,22 @@ document.addEventListener('DOMContentLoaded', () => {
                         item.style.display = 'none';
                     }
                 });
+                
+                if (typeof GLightbox !== 'undefined') {
+                    lightbox.reload();
+                }
             });
         });
     }
 
     // GLightbox initialization
-    try {
-        const lightbox = GLightbox({
-            selector: '.glightbox'
+    if (typeof GLightbox !== 'undefined') {
+        var lightbox = GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true,
         });
-    } catch (e) {
-        console.error("GLightbox not found or failed to initialize:", e);
+    } else {
+        console.error("GLightbox library not found or failed to initialize.");
     }
 });
