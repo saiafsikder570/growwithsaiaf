@@ -6,7 +6,6 @@
     <title>Saiaf Digital - Your Digital Marketing Partner</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
@@ -77,19 +76,97 @@
     </section>
 
     <section id="services" class="services">
-        <!-- ... Your Services Section ... -->
+        <div class="container">
+            <div class="section-title">
+                <h2>My Services</h2>
+                <p>I offer a wide range of digital marketing services to help your business grow.</p>
+            </div>
+            <div class="services-container">
+                <div class="service-card"><div class="icon-box"><i class="fas fa-search"></i></div><h3>SEO Optimization</h3><p>Get your website to the top of Google's search results and attract organic traffic.</p></div>
+                <div class="service-card"><div class="icon-box"><i class="fas fa-bullhorn"></i></div><h3>Social Media Marketing</h3><p>Engage with your audience on platforms like Facebook, Instagram, and build a strong brand.</p></div>
+                <div class="service-card"><div class="icon-box"><i class="fas fa-ad"></i></div><h3>Facebook & Google Ads</h3><p>Run targeted ad campaigns to reach potential customers and increase conversions.</p></div>
+                <div class="service-card"><div class="icon-box"><i class="fas fa-pencil-alt"></i></div><h3>Content Writing</h3><p>Create high-quality, SEO-friendly content that engages your audience and drives action.</p></div>
+                <div class="service-card"><div class="icon-box"><i class="fas fa-laptop-code"></i></div><h3>Website Design</h3><p>Build a professional and responsive website that provides a great user experience.</p></div>
+                <div class="service-card"><div class="icon-box"><i class="fas fa-map-marker-alt"></i></div><h3>Local SEO</h3><p>Optimize your online presence to attract more customers from local searches.</p></div>
+            </div>
+        </div>
     </section>
+
     <section id="portfolio" class="portfolio">
-        <!-- ... Your Portfolio Section ... -->
+        <div class="container">
+            <div class="section-title">
+                <h2>My Portfolio</h2>
+                <p>Here are some of the projects I've worked on. Click on any project to see the details.</p>
+            </div>
+            <ul id="portfolio-filters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-seo">SEO</li>
+                <li data-filter=".filter-ads">Paid Ads</li>
+                <li data-filter=".filter-smm">Social Media</li>
+                <li data-filter=".filter-data">Data & Analytics</li>
+            </ul>
+            <div class="portfolio-container">
+                <div class="portfolio-item filter-seo"><a href="https://via.placeholder.com/800x600.png?text=SEO+Project" class="glightbox" data-gallery="portfolio-gallery" data-description="<strong>Project:</strong> On-Page SEO Optimization <br><strong>Details:</strong> Increased organic traffic by 40%."><img src="https://via.placeholder.com/400x300.png?text=On-Page+SEO" class="img-fluid" alt=""></a></div>
+                <div class="portfolio-item filter-ads"><a href="https://via.placeholder.com/800x600.png?text=Google+Ads" class="glightbox" data-gallery="portfolio-gallery" data-description="<strong>Project:</strong> Google Ads Campaign <br><strong>Details:</strong> Achieved a 5X ROAS."><img src="https://via.placeholder.com/400x300.png?text=Google+Ads" class="img-fluid" alt=""></a></div>
+                <div class="portfolio-item filter-smm"><a href="https://via.placeholder.com/800x600.png?text=Facebook+Campaign" class="glightbox" data-gallery="portfolio-gallery" data-description="<strong>Project:</strong> Facebook Marketing <br><strong>Details:</strong> Grew a page by 10k followers."><img src="https://via.placeholder.com/400x300.png?text=Facebook+Marketing" class="img-fluid" alt=""></a></div>
+                <div class="portfolio-item filter-data"><a href="https://via.placeholder.com/800x600.png?text=GA4+Tracking" class="glightbox" data-gallery="portfolio-gallery" data-description="<strong>Project:</strong> GA4 Tracking Setup <br><strong>Details:</strong> Implemented advanced event tracking."><img src="https://via.placeholder.com/400x300.png?text=GA4+Tracking" class="img-fluid" alt=""></a></div>
+                <div class="portfolio-item filter-ads"><a href="https://via.placeholder.com/800x600.png?text=Meta+Ads" class="glightbox" data-gallery="portfolio-gallery" data-description="<strong>Project:</strong> Meta Ads Report <br><strong>Details:</strong> Created detailed performance reports."><img src="https://via.placeholder.com/400x300.png?text=Meta+Ads" class="img-fluid" alt=""></a></div>
+                <div class="portfolio-item filter-smm"><a href="https://via.placeholder.com/800x600.png?text=Instagram+Growth" class="glightbox" data-gallery="portfolio-gallery" data-description="<strong>Project:</strong> Instagram Growth <br><strong>Details:</strong> Managed content strategy."><img src="https://via.placeholder.com/400x300.png?text=Instagram+Growth" class="img-fluid" alt=""></a></div>
+            </div>
+        </div>
     </section>
+
     <section id="testimonials" class="testimonials">
-        <!-- ... Your Testimonials Section ... -->
+        <div class="container">
+            <div class="section-title">
+                <h2>ক্লায়েন্টদের কথা</h2>
+                <p>আমার কাজ সম্পর্কে ক্লায়েন্টরা কী বলেন</p>
+            </div>
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <p>"সাইফের সাথে কাজ করার অভিজ্ঞতা চমৎকার। তিনি ডেডলাইন সম্পর্কে খুব সচেতন এবং কাজটি অত্যন্ত পেশাদারিত্বের সাথে সম্পন্ন করেছেন।"</p>
+                    <h4>- Minhazul Asif</h4>
+                    <span>CEO, Tech Company</span>
+                </div>
+                 <div class="testimonial-card">
+                    <p>"তার SEO কৌশলের কারণে আমাদের ওয়েবসাইটের ট্র্যাফিক ৬ মাসের মধ্যে দ্বিগুণ হয়েছে। আমি তার সেবার জন্য সুপারিশ করছি।"</p>
+                    <h4>- Arafat Sunny</h4>
+                    <span>Owner, E-commerce Store</span>
+                </div>
+            </div>
+        </div>
     </section>
+
     <section id="contact" class="contact">
-        <!-- ... Your Contact Section ... -->
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <p>Have a project in mind or want to discuss something? Feel free to reach out.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-box"><i class="fas fa-map-marker-alt"></i><h3>My Address</h3><p>Dhaka, Bangladesh</p></div>
+                    <div class="info-box"><i class="fas fa-envelope"></i><h3>Email Me</h3><p>saiafsikder570@gmail.com</p></div>
+                    <div class="info-box"><i class="fas fa-phone"></i><h3>Call Me</h3><p>+880 [Your Phone Number]</p></div>
+                </div>
+            </div>
+        </div>
     </section>
+    
     <footer id="footer">
-        <!-- ... Your Footer Section ... -->
+        <div class="container">
+            <h3>SaiafDigital</h3>
+            <p>Let's connect and create something amazing together.</p>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>SaiafDigital</span></strong>. All Rights Reserved
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
