@@ -21,3 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+
+
+// GLightbox initialization
+const lightbox = GLightbox({
+    selector: '.glightbox'
+});
