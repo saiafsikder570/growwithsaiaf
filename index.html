@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saiaf Digital - Your Digital Marketing Partner</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -109,13 +110,13 @@
         </div>
     </section>
     
-   <!-- ======= Portfolio Section ======= -->
+  <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
         <div class="container">
 
             <div class="section-title">
                 <h2>My Portfolio</h2>
-                <p>Here are some of the projects I've worked on. Use the filters to see projects by category.</p>
+                <p>Here are some of the projects I've worked on. Click on any project to see the details.</p>
             </div>
 
             <ul id="portfolio-filters" class="d-flex justify-content-center">
@@ -127,38 +128,39 @@
             </ul>
 
             <div class="portfolio-container">
+
                 <!-- Portfolio Item 1: SEO -->
                 <div class="portfolio-item filter-seo">
-                    <img src="https://via.placeholder.com/400x300.png?text=On-Page+SEO" class="img-fluid" alt="On-Page SEO Project">
+                    <a href="https://via.placeholder.com/800x600.png?text=SEO+Project+Details" 
+                       class="glightbox" 
+                       data-gallery="portfolio-gallery" 
+                       data-description="<strong>Project:</strong> On-Page SEO Optimization <br><strong>Details:</strong> Increased organic traffic by 40% for an e-commerce client by optimizing meta tags, content, and site speed.">
+                       <img src="https://via.placeholder.com/400x300.png?text=On-Page+SEO" class="img-fluid" alt="">
+                    </a>
                 </div>
+
                 <!-- Portfolio Item 2: Paid Ads -->
                 <div class="portfolio-item filter-ads">
-                    <img src="https://via.placeholder.com/400x300.png?text=Google+Ads+Campaign" class="img-fluid" alt="Google Ads Campaign">
+                    <a href="https://via.placeholder.com/800x600.png?text=Google+Ads+Details" 
+                       class="glightbox" 
+                       data-gallery="portfolio-gallery"
+                       data-description="<strong>Project:</strong> Google Ads Campaign <br><strong>Details:</strong> Managed a $5000/month budget to achieve a 5X Return On Ad Spend (ROAS) for a local service business.">
+                       <img src="https://via.placeholder.com/400x300.png?text=Google+Ads+Campaign" class="img-fluid" alt="">
+                    </a>
                 </div>
+
                 <!-- Portfolio Item 3: Social Media -->
                 <div class="portfolio-item filter-smm">
-                    <img src="https://via.placeholder.com/400x300.png?text=Facebook+Marketing" class="img-fluid" alt="Facebook Marketing Campaign">
+                     <a href="https://via.placeholder.com/800x600.png?text=Facebook+Campaign+Details" 
+                       class="glightbox" 
+                       data-gallery="portfolio-gallery"
+                       data-description="<strong>Project:</strong> Facebook Marketing Campaign <br><strong>Details:</strong> Grew the client's Facebook page by 10,000 followers in 3 months through engaging content and targeted ads.">
+                       <img src="https://via.placeholder.com/400x300.png?text=Facebook+Marketing" class="img-fluid" alt="">
+                    </a>
                 </div>
-                 <!-- Portfolio Item 4: Data & Analytics -->
-                <div class="portfolio-item filter-data">
-                    <img src="https://via.placeholder.com/400x300.png?text=GA4+Tracking+Setup" class="img-fluid" alt="Google Analytics 4 Setup">
-                </div>
-                 <!-- Portfolio Item 5: Paid Ads -->
-                <div class="portfolio-item filter-ads">
-                    <img src="https://via.placeholder.com/400x300.png?text=Meta+Ads+Report" class="img-fluid" alt="Meta Ads Report">
-                </div>
-                 <!-- Portfolio Item 6: Social Media -->
-                <div class="portfolio-item filter-smm">
-                    <img src="https://via.placeholder.com/400x300.png?text=Instagram+Growth" class="img-fluid" alt="Instagram Growth Project">
-                </div>
-                <!-- Portfolio Item 7: Data & Analytics -->
-                <div class="portfolio-item filter-data">
-                    <img src="https://via.placeholder.com/400x300.png?text=Facebook+Pixel+Setup" class="img-fluid" alt="Facebook Pixel Setup">
-                </div>
-                 <!-- Portfolio Item 8: Social Media -->
-                <div class="portfolio-item filter-smm">
-                    <img src="https://via.placeholder.com/400x300.png?text=LinkedIn+Outreach" class="img-fluid" alt="LinkedIn Outreach">
-                </div>
+                
+                 <!-- Add more portfolio items following the same structure -->
+
             </div>
         </div>
     </section><!-- End Portfolio Section -->
@@ -211,11 +213,12 @@
         </div>
     </footer><!-- End Footer -->
 
-
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <!-- This is the CORRECT place for the script tag -->
     <script src="script.js"></script>
 
 </body>
 </html>
+
 
 
