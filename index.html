@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saiaf Digital - Your Digital Marketing Partner</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
@@ -35,7 +36,6 @@
         </div>
     </section>
 
-
     <!-- About Me Section -->
     <section id="about" class="about">
         <div class="container">
@@ -60,12 +60,8 @@
             </div>
         </div>
     </section>
-    
-</body>
 
-</html>
-
-<!-- Services Section -->
+    <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
             <div class="section-title">
@@ -112,4 +108,55 @@
             </div>
         </div>
     </section>
+    
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
 
+            <div class="section-title">
+                <h2>My Portfolio</h2>
+                <p>Here are some of the projects I've worked on. Use the filters to see projects by category.</p>
+            </div>
+
+            <ul id="portfolio-filters" class="d-flex justify-content-center">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-seo">SEO</li>
+                <li data-filter=".filter-ads">Paid Ads</li>
+                <li data-filter=".filter-smm">SMM</li>
+            </ul>
+
+            <div class="portfolio-container">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item filter-seo">
+                    <img src="https://via.placeholder.com/400x300.png?text=SEO+Project" class="img-fluid" alt="">
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item filter-ads">
+                    <img src="https://via.placeholder.com/400x300.png?text=Google+Ads" class="img-fluid" alt="">
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item filter-smm">
+                    <img src="https://via.placeholder.com/400x300.png?text=Facebook+Campaign" class="img-fluid" alt="">
+                </div>
+                 <!-- Portfolio Item 4 -->
+                <div class="portfolio-item filter-seo">
+                    <img src="https://via.placeholder.com/400x300.png?text=Local+SEO" class="img-fluid" alt="">
+                </div>
+                 <!-- Portfolio Item 5 -->
+                <div class="portfolio-item filter-ads">
+                    <img src="https://via.placeholder.com/400x300.png?text=Meta+Ads" class="img-fluid" alt="">
+                </div>
+                 <!-- Portfolio Item 6 -->
+                <div class="portfolio-item filter-smm">
+                    <img src="https://via.placeholder.com/400x300.png?text=Instagram+Growth" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section><!-- End Portfolio Section -->
+
+
+    <!-- This is the CORRECT place for the script tag -->
+    <script src="script.js"></script>
+
+</body>
+</html>
