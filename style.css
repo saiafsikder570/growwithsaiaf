@@ -306,6 +306,72 @@ font-weight: 700;
 
 
 
+/* ===================================
+   MOBILE RESPONSIVE STYLES
+   =================================== */
+@media (max-width: 768px) {
+    /* General Adjustments */
+    h1, .hero-text h1 {
+        font-size: 2.2rem;
+    }
+    h2, .section-title h2 {
+        font-size: 2rem;
+    }
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Navbar */
+    .navbar nav {
+        display: none; /* Hiding the menu for now, will fix later if needed */
+    }
+    .navbar .container {
+        justify-content: center;
+    }
+
+    /* Hero Section */
+    .hero-content {
+        flex-direction: column; /* Stacks text and image vertically */
+        text-align: center;
+    }
+    .hero-image-wrapper {
+        margin-top: 40px;
+    }
+    .main-hero-image {
+        max-width: 250px;
+    }
+    .tech-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    /* About Section */
+    .about-flex-container-final {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text-col-final {
+        padding-left: 0;
+        border-left: none;
+        margin-top: 30px;
+    }
+    .about-skills-grid {
+        grid-template-columns: 1fr; /* Skills will be in a single column */
+    }
+
+    /* Services, Portfolio, Testimonials Grid */
+    .services-container,
+    .portfolio-container-final,
+    .testimonial-grid-final {
+        grid-template-columns: 1fr; /* All grids become single column */
+    }
+
+    /* Contact Info */
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
