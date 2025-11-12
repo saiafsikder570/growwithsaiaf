@@ -61,3 +61,81 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Hind Siliguri', 'Poppins', sans-serif; fo
 #footer h3 { font-size: 36px; font-weight: 700; margin: 0 0 15px 0; }
 #footer .social-links a { font-size: 18px; display: inline-block; background: rgba(255, 255, 255, 0.1); color: #fff; line-height: 1; padding: 8px 0; margin-right: 4px; border-radius: 50%; text-align: center; width: 36px; height: 36px; transition: 0.3s; }
 #footer .social-links a:hover { background: #fff; color: var(--primary-color); }
+
+
+
+
+
+
+/* Final About Me Section */
+.about-new-final {
+    padding: 80px 0;
+    background: #fff;
+}
+.about-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+.about-info-col, .about-skills-col {
+    flex: 1;
+}
+.about-image-col {
+    flex: 0 0 300px;
+    text-align: center;
+}
+.about-image-col img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 5px solid var(--primary-color);
+}
+.about-info-col h4, .about-skills-col h4 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+.about-description, .skills-intro {
+    color: #555;
+    margin-bottom: 20px;
+}
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+.contact-list li {
+    margin-bottom: 10px;
+    color: #333;
+}
+.contact-list i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+.social-icons-about a {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+.social-icons-about a:hover {
+    color: #333;
+}
+.skill-box {
+    margin-bottom: 20px;
+}
+.skill-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.skill-bar-container {
+    background: #e9ecef;
+    border-radius: 5px;
+    height: 10px;
+}
+.skill-bar {
+    background: var(--primary-color);
+    height: 100%;
+    border-radius: 5px;
+}
