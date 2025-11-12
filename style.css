@@ -206,3 +206,103 @@ h1, h2, h3, h4, h5, h6, .logo, .navbar ul li a { font-family: 'Montserrat', 'Hin
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================
+FINAL PORTFOLIO & PROJECT PAGE STYLES
+=================================== */
+.portfolio-container-final {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+gap: 30px;
+}
+.portfolio-card {
+text-decoration: none;
+color: var(--text-color);
+background: #fff;
+border-radius: 10px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+overflow: hidden;
+transition: all 0.3s ease;
+}
+.portfolio-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.portfolio-card img {
+width: 100%;
+display: block;
+}
+.portfolio-card-title {
+padding: 20px;
+font-weight: 700;
+font-size: 1.1rem;
+}
+
+/* Project Details Page Styles */
+.project-page {
+background: #f9f9f9;
+}
+.project-details-container {
+padding: 60px 20px;
+background: #fff;
+max-width: 900px;
+margin-top: 40px;
+margin-bottom: 40px;
+border-radius: 10px;
+box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+.project-banner-image {
+width: 100%;
+border-radius: 10px;
+margin-bottom: 30px;
+}
+.project-description h4 {
+font-size: 1.5rem;
+color: var(--primary-color);
+margin-top: 30px;
+margin-bottom: 15px;
+}
+.project-description ul {
+list-style: none;
+padding: 0;
+}
+.project-description ul li {
+margin-bottom: 10px;
+}
+.project-description ul i {
+color: #28a745;
+margin-right: 10px;
+}
+.sample-work {
+margin-top: 40px;
+}
+.sample-work img {
+width: 100%;
+border-radius: 5px;
+margin-bottom: 20px;
+border: 1px solid #eee;
+}
+.back-to-home {
+display: inline-block;
+margin-top: 40px;
+color: var(--primary-color);
+text-decoration: none;
+font-weight: 700;
+}
+
