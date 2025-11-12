@@ -285,3 +285,72 @@ h1, h2, h3, h4, h5, h6, .logo, .navbar ul li a { font-family: 'Montserrat', 'Hin
     color: #ffc107; /* Star color */
     margin-top: 5px;
 }
+
+
+
+/* ===================================
+   Final Testimonials Section Styles (WITH HOVER EFFECT)
+   =================================== */
+.testimonials-final {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.testimonial-grid-final {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card-final {
+    background: #F7F3FF;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #EAE0FF;
+    transition: all 0.3s ease; /* This line adds the smooth transition */
+}
+
+.testimonial-card-final:hover {
+    transform: translateY(-10px); /* This makes the card move up on hover */
+    box-shadow: 0 15px 30px rgba(106, 13, 173, 0.1); /* This adds a shadow on hover */
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #fff;
+}
+
+.author-info h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.author-info span {
+    font-size: 0.9rem;
+    color: #777;
+    display: block;
+}
+
+.stars {
+    color: #ffc107;
+    margin-top: 5px;
+}
