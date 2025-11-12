@@ -152,77 +152,6 @@ h1, h2, h3, h4, h5, h6, .logo, .navbar ul li a { font-family: 'Montserrat', 'Hin
 
 
 
-
-
-
-
-
-
-
-
-
-/* ===================================
-   FINAL PORTFOLIO STYLING (WITH ICONS & GRADIENT)
-   =================================== */
-.portfolio {
-    background: #f9f9f9;
-}
-#portfolio-filters-final {
-    padding: 0; margin: 0 auto 35px auto; list-style: none; text-align: center;
-}
-#portfolio-filters-final li {
-    cursor: pointer; display: inline-block; padding: 10px 18px; font-size: 14px; font-weight: 600; text-transform: uppercase; color: #444; margin: 0 5px 10px; transition: all 0.3s ease-in-out; border-radius: 5px; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-#portfolio-filters-final li:hover,
-#portfolio-filters-final li.filter-active {
-    color: #fff; background: var(--primary-color);
-}
-.portfolio-container-final {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
-.portfolio-card {
-    text-decoration: none;
-    color: var(--text-color);
-    background: linear-gradient(135deg, #fdfaff, #f4edff); /* Light Purple Gradient */
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    transition: all 0.3s ease;
-    padding: 30px;
-    text-align: center;
-}
-.portfolio-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(106, 13, 173, 0.1);
-}
-.portfolio-card-icon {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-}
-.portfolio-card-title {
-    font-weight: 700;
-    font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ===================================
 FINAL PORTFOLIO & PROJECT PAGE STYLES
 =================================== */
@@ -305,4 +234,79 @@ color: var(--primary-color);
 text-decoration: none;
 font-weight: 700;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================
+   FINAL PORTFOLIO STYLING (WITH ICONS & GRADIENT)
+   =================================== */
+.portfolio {
+    background: #f9f9f9;
+}
+#portfolio-filters-final {
+    padding: 0; margin: 0 auto 35px auto; list-style: none; text-align: center;
+}
+#portfolio-filters-final li {
+    cursor: pointer; display: inline-block; padding: 10px 18px; font-size: 14px; font-weight: 600; text-transform: uppercase; color: #444; margin: 0 5px 10px; transition: all 0.3s ease-in-out; border-radius: 5px; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+#portfolio-filters-final li:hover,
+#portfolio-filters-final li.filter-active {
+    color: #fff; background: var(--primary-color);
+}
+.portfolio-container-final {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+.portfolio-card {
+    text-decoration: none;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #fdfaff, #f4edff); /* Light Purple Gradient */
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    padding: 30px;
+    text-align: center;
+}
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(106, 13, 173, 0.1);
+}
+.portfolio-card-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.portfolio-card-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
