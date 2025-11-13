@@ -545,7 +545,7 @@ font-weight: 700;
 
 
 /* ======================================================
-   STYLES FOR NEW SOLUTIONS & CASE STUDY PAGES
+   UPDATED STYLES FOR SOLUTIONS & CASE STUDY PAGES
 ====================================================== */
 
 /* --- Solutions Hub Page Styles --- */
@@ -560,19 +560,25 @@ font-weight: 700;
 }
 .solutions-hero h1 {
     font-size: 3.5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* UPDATED: Matched font */
     max-width: 800px;
     margin: 0 auto 20px auto;
+    line-height: 1.3;
 }
 .solutions-hero p {
     font-size: 1.1rem;
     max-width: 600px;
-    margin: 0 auto 30px auto;
-    color: #f1f1f1;
+    margin: 0 auto 40px auto; /* UPDATED: Increased margin for button */
+    color: rgba(255, 255, 255, 0.85); /* UPDATED: Brighter text */
+}
+/* UPDATED: Changed button color to match brand */
+.solutions-hero .cta-button {
+    background-color: var(--primary-color); 
 }
 
+/* UPDATED: Changed bar color to match brand */
 .partners-bar {
-    background-color: #ff5722; /* Orange color */
+    background-color: var(--primary-color);
     padding: 20px 0;
 }
 .partners-bar .container {
@@ -584,7 +590,8 @@ font-weight: 700;
 }
 .partners-bar img {
     height: 30px;
-    filter: brightness(0) invert(1); /* Makes logos white */
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
 }
 
 .service-trio-section {
@@ -592,8 +599,9 @@ font-weight: 700;
     text-align: center;
     background: #f8f9fa;
 }
+/* UPDATED: Changed subtitle color to match brand */
 .section-subtitle {
-    color: #ff5722;
+    color: var(--primary-color);
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -633,9 +641,10 @@ font-weight: 700;
 .trio-card.elevated:hover {
      transform: translateY(-30px);
 }
+/* UPDATED: Changed icon color to match brand */
 .trio-icon {
     font-size: 2.5rem;
-    color: #ff5722;
+    color: var(--primary-color);
     margin-bottom: 20px;
 }
 .trio-card h3 {
@@ -653,8 +662,9 @@ font-weight: 700;
     padding: 120px 0;
     color: #fff;
 }
+/* UPDATED: Changed tag color to match brand */
 .hero-tag {
-    background: #ff5722;
+    background: var(--primary-color);
     display: inline-block;
     padding: 5px 15px;
     border-radius: 5px;
@@ -672,9 +682,14 @@ font-weight: 700;
     color: #f1f1f1;
     margin-bottom: 30px;
 }
+/* UPDATED: Changed button color to match brand */
+.case-study-hero .cta-button {
+    background-color: var(--primary-color);
+}
 
+/* UPDATED: Changed bar color to match brand */
 .stats-bar {
-    background: #ff5722;
+    background: var(--primary-color);
     padding: 40px 0;
     color: #fff;
 }
@@ -709,8 +724,9 @@ font-weight: 700;
 .text-content, .image-content {
     flex: 1;
 }
+/* UPDATED: Changed tag color to match brand */
 .content-tag {
-    color: #ff5722;
+    color: var(--primary-color);
     font-weight: 700;
     margin-bottom: 10px;
 }
