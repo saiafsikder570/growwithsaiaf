@@ -537,3 +537,198 @@ font-weight: 700;
 }```
 
 
+
+
+
+
+
+
+
+/* ======================================================
+   STYLES FOR NEW SOLUTIONS & CASE STUDY PAGES
+====================================================== */
+
+/* --- Solutions Hub Page Styles --- */
+.solutions-hero {
+    background-color: #1a1a1a;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://i.ibb.co/F8DkSgG/solutions-hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+.solutions-hero h1 {
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+.solutions-hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #f1f1f1;
+}
+
+.partners-bar {
+    background-color: #ff5722; /* Orange color */
+    padding: 20px 0;
+}
+.partners-bar .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.partners-bar img {
+    height: 30px;
+    filter: brightness(0) invert(1); /* Makes logos white */
+}
+
+.service-trio-section {
+    padding: 100px 0;
+    text-align: center;
+    background: #f8f9fa;
+}
+.section-subtitle {
+    color: #ff5722;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.service-trio-section h2 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+.section-description {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    color: #666;
+}
+.service-card-trio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+.trio-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.07);
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+.trio-card:hover {
+    transform: translateY(-10px);
+}
+.trio-card.elevated {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    transform: translateY(-20px);
+}
+.trio-card.elevated:hover {
+     transform: translateY(-30px);
+}
+.trio-icon {
+    font-size: 2.5rem;
+    color: #ff5722;
+    margin-bottom: 20px;
+}
+.trio-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+
+/* --- Case Study Detail Page Styles --- */
+.case-study-hero {
+    background-color: #1a1a1a;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.ibb.co/DCw5MhN/case-study-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    color: #fff;
+}
+.hero-tag {
+    background: #ff5722;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.case-study-hero h1 {
+    font-size: 3.8rem;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+.case-study-hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    color: #f1f1f1;
+    margin-bottom: 30px;
+}
+
+.stats-bar {
+    background: #ff5722;
+    padding: 40px 0;
+    color: #fff;
+}
+.stats-bar .container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.stat-item { padding: 10px 20px; }
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    display: block;
+}
+.stat-label {
+    font-size: 1rem;
+}
+
+.case-study-content {
+    padding: 100px 0;
+}
+.content-block {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.content-block.reverse {
+    flex-direction: row-reverse;
+}
+.text-content, .image-content {
+    flex: 1;
+}
+.content-tag {
+    color: #ff5722;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.text-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.image-content img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .solutions-hero h1 { font-size: 2.5rem; }
+    .case-study-hero h1 { font-size: 2.8rem; }
+    .content-block, .content-block.reverse {
+        flex-direction: column;
+    }
+}
