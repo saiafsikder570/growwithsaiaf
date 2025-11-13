@@ -76,73 +76,75 @@ h1, h2, h3, h4, h5, h6, .logo, .navbar ul li a { font-family: 'Montserrat', 'Hin
 
 
 /* ===================================
-Final Testimonials Section Styles (WITH GRADIENT & HOVER)
+   Final Testimonials Section Styles (WITH GRADIENT & HOVER)
 =================================== */
 .testimonials-final {
-padding: 80px 0;
-background: #fff;
+    padding: 80px 0;
+    background: #fff;
 }
 
 .testimonial-grid-final {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
 }
 
 .testimonial-card-final {
-background: linear-gradient(135deg, #7b2cbf, #5a189a); /* Purple Gradient */
-color: #fff; /* White text */
-padding: 30px;
-border-radius: 15px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-transition: all 0.3s ease;
+    /* UPDATED: Softer and more pleasant gradient */
+    background: linear-gradient(135deg, #7b2cbf, #6a0dad); 
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
 }
 
 .testimonial-card-final:hover {
-transform: translateY(-10px);
-box-shadow: 0 15px 30px rgba(90, 24, 154, 0.3); /* Purple Shadow */
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(90, 24, 154, 0.3);
 }
 
 .testimonial-text {
-font-style: italic;
-color: #f0e6ff; /* Light purple text */
-margin-bottom: 25px;
-flex-grow: 1;
+    font-style: italic;
+    color: #f0e6ff;
+    margin-bottom: 25px;
+    flex-grow: 1;
+    font-size: 1.05rem; /* UPDATED: Slightly larger font for better readability */
+    line-height: 1.7;   /* UPDATED: Better spacing between lines */
 }
 
 .testimonial-author {
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .testimonial-author img {
-width: 60px;
-height: 60px;
-border-radius: 50%;
-margin-right: 15px;
-border: 3px solid #c77dff; /* Lighter purple border */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 3px solid #c77dff; /* Lighter purple border */
 }
 
 .author-info h4 {
-font-family: 'Montserrat', sans-serif;
-font-weight: 700;
-margin: 0 0 5px 0;
-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #fff;
 }
 
 .author-info span {
-font-size: 0.9rem;
-color: #e0c3fc; /* Lighter purple text */
-display: block;
+    font-size: 0.9rem;
+    color: #e0c3fc; /* Lighter purple text */
+    display: block;
 }
 
 .stars {
-color: #ffc107;
-margin-top: 5px;
-}
-
+    color: #ffc107;
+    margin-top: 5px;
+}```
 
 
 
@@ -533,4 +535,5 @@ font-weight: 700;
         font-size: 2.1rem;
     }
 }```
+
 
