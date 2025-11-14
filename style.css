@@ -758,37 +758,27 @@ font-weight: 700;
 
 
 /* ======================================================
-   STYLES FOR NEW PRICING PAGE
+   UPDATED & UNIQUE STYLES FOR PRICING PAGE
 ====================================================== */
 
 body.pricing-page {
-    background-color: #120c18; /* Dark purple background */
+    background-color: #120c18;
 }
 
 .pricing-hero {
-    background: linear-gradient(160deg, #3a0ca3, #120c18);
+    background: linear-gradient(160deg, rgba(58, 12, 163, 0.95), rgba(18, 12, 24, 0.95)), url('https://i.ibb.co/zH40K7f/wave-haikei.png');
+    background-size: cover;
+    background-position: center;
     color: #fff;
     padding: 100px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
 }
-/* This creates the wavy line effect */
-.pricing-hero::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-image: url('https://i.ibb.co/zH40K7f/wave-haikei.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-}
 .pricing-hero h1 {
     font-size: 3.2rem;
     margin-bottom: 15px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 .pricing-hero p {
     font-size: 1.2rem;
@@ -803,87 +793,91 @@ body.pricing-page {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 40px;
     justify-content: center;
+    perspective: 1000px; /* Important for 3D effect */
 }
 
-.pricing-card {
-    background: #1e152a;
-    border: 1px solid #3a0ca3;
-    border-radius: 15px;
-    padding: 30px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.3s ease;
+/* --- 3D Flip Card Styles --- */
+.flip-card {
+    background-color: transparent;
+    height: 450px;
+    border: none;
     position: relative;
 }
-.pricing-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 40px rgba(58, 12, 163, 0.5);
-}
-.pricing-card.featured {
-    border-color: #c77dff;
-    transform: scale(1.05);
+.flip-card.featured {
+    transform: scale(1.05); /* Make featured card slightly bigger */
+    z-index: 10;
 }
 .popular-badge {
     position: absolute;
     top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background: #c77dff;
-    color: #120c18;
+    background: linear-gradient(45deg, #c77dff, #f72585);
+    color: #fff;
     padding: 5px 15px;
     border-radius: 20px;
     font-weight: 700;
     font-size: 0.9rem;
+    z-index: 15;
 }
-.pricing-card .card-header h3 {
-    font-size: 1.8rem;
-    color: #fff;
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
-.pricing-card .price {
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(30, 21, 42, 0.8);
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 20px rgba(58, 12, 163, 0.3);
+}
+.flip-card-back {
+    transform: rotateY(180deg);
+    justify-content: space-between;
+}
+.flip-card-front h3 { font-size: 2rem; color: #fff; }
+.flip-card-front .price {
     font-size: 3rem;
     font-weight: 800;
     margin: 15px 0;
     color: #c77dff;
 }
-.price span:not(.price-unit) {
-    font-size: 1.5rem;
-    vertical-align: super;
-    margin-right: 5px;
-}
-.price span:last-child {
-    font-size: 1rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.7);
-}
-.pricing-card .card-body {
-    margin: 20px 0;
-    flex-grow: 1;
-}
-.card-body ul {
-    list-style: none;
-    padding: 0;
+.price span { font-size: 1.5rem; }
+.price span:last-child { font-size: 1rem; color: rgba(255, 255, 255, 0.7); }
+.hover-prompt {
     margin-top: 20px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.6);
 }
-.card-body ul li {
-    margin-bottom: 15px;
-    color: rgba(255, 255, 255, 0.8);
-}
-.card-body ul i {
-    color: #4cc9f0;
-    margin-right: 10px;
-}
-.card-body ul li i.fa-times {
-    color: #f72585;
-}
-.pricing-card .cta-button {
+
+.flip-card-back h3 { font-size: 1.5rem; margin-bottom: 15px; color: #fff;}
+.flip-card-back ul { list-style: none; padding: 0; text-align: left; width: 100%; margin: 0;}
+.flip-card-back ul li { margin-bottom: 10px; color: rgba(255, 255, 255, 0.8); }
+.flip-card-back ul i { color: #4cc9f0; margin-right: 10px; }
+.flip-card-back ul i.fa-times { color: #f72585; }
+.flip-card-back .cta-button {
     width: 100%;
-    text-align: center;
+    margin-top: 15px;
     background-color: var(--primary-color);
 }
-.pricing-card.featured .cta-button {
-    background-color: #c77dff;
-    color: #120c18;
+.flip-card.featured .flip-card-back .cta-button {
+    background: linear-gradient(45deg, #c77dff, #f72585);
 }
 
 .trust-badges-section {
@@ -896,10 +890,5 @@ body.pricing-page {
     gap: 60px;
     flex-wrap: wrap;
 }
-.trust-badge {
-    color: #fff;
-}
-.trust-badge img {
-    height: 80px;
-    margin-bottom: 15px;
-}
+.trust-badge { color: #fff; }
+.trust-badge img { height: 80px; margin-bottom: 15px; }
