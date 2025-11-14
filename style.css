@@ -748,3 +748,158 @@ font-weight: 700;
         flex-direction: column;
     }
 }
+
+
+
+
+
+
+
+
+
+/* ======================================================
+   STYLES FOR NEW PRICING PAGE
+====================================================== */
+
+body.pricing-page {
+    background-color: #120c18; /* Dark purple background */
+}
+
+.pricing-hero {
+    background: linear-gradient(160deg, #3a0ca3, #120c18);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+/* This creates the wavy line effect */
+.pricing-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url('https://i.ibb.co/zH40K7f/wave-haikei.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.pricing-hero h1 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+}
+.pricing-hero p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.pricing-grid-section {
+    padding: 100px 0;
+}
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    justify-content: center;
+}
+
+.pricing-card {
+    background: #1e152a;
+    border: 1px solid #3a0ca3;
+    border-radius: 15px;
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(58, 12, 163, 0.5);
+}
+.pricing-card.featured {
+    border-color: #c77dff;
+    transform: scale(1.05);
+}
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #c77dff;
+    color: #120c18;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.pricing-card .card-header h3 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+.pricing-card .price {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 15px 0;
+    color: #c77dff;
+}
+.price span:not(.price-unit) {
+    font-size: 1.5rem;
+    vertical-align: super;
+    margin-right: 5px;
+}
+.price span:last-child {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+.pricing-card .card-body {
+    margin: 20px 0;
+    flex-grow: 1;
+}
+.card-body ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+.card-body ul li {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.card-body ul i {
+    color: #4cc9f0;
+    margin-right: 10px;
+}
+.card-body ul li i.fa-times {
+    color: #f72585;
+}
+.pricing-card .cta-button {
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+.pricing-card.featured .cta-button {
+    background-color: #c77dff;
+    color: #120c18;
+}
+
+.trust-badges-section {
+    padding: 50px 0 100px 0;
+    text-align: center;
+}
+.trust-badges-section .container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.trust-badge {
+    color: #fff;
+}
+.trust-badge img {
+    height: 80px;
+    margin-bottom: 15px;
+}
