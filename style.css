@@ -758,22 +758,20 @@ font-weight: 700;
 
 
 /* ======================================================
-   UPDATED & UNIQUE STYLES FOR PRICING PAGE
+   FINAL AWARD-STYLE PRICING PAGE STYLES
 ====================================================== */
 
 body.pricing-page {
     background-color: #120c18;
+    color: #fff;
 }
 
 .pricing-hero {
     background: linear-gradient(160deg, rgba(58, 12, 163, 0.95), rgba(18, 12, 24, 0.95)), url('https://i.ibb.co/zH40K7f/wave-haikei.png');
     background-size: cover;
     background-position: center;
-    color: #fff;
     padding: 100px 0;
     text-align: center;
-    position: relative;
-    overflow: hidden;
 }
 .pricing-hero h1 {
     font-size: 3.2rem;
@@ -785,110 +783,124 @@ body.pricing-page {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.pricing-grid-section {
-    padding: 100px 0;
-}
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 40px;
-    justify-content: center;
-    perspective: 1000px; /* Important for 3D effect */
-}
-
-/* --- 3D Flip Card Styles --- */
-.flip-card {
-    background-color: transparent;
-    height: 450px;
-    border: none;
-    position: relative;
-}
-.flip-card.featured {
-    transform: scale(1.05); /* Make featured card slightly bigger */
-    z-index: 10;
-}
-.popular-badge {
-    position: absolute;
-    top: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: linear-gradient(45deg, #c77dff, #f72585);
-    color: #fff;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 0.9rem;
-    z-index: 15;
-}
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.award-pricing-section {
+    padding: 120px 0;
     text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
 }
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
+.award-grid {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.award-card {
+    position: relative;
+    padding-top: 40px; /* Space for the top bar */
+    transition: transform 0.3s ease;
+}
+.award-card:hover {
+    transform: scale(1.05);
+}
+.award-card.featured {
+    transform: scale(1.1);
+}
+.award-card.featured:hover {
+    transform: scale(1.15);
+}
+
+.card-main-content {
+    background: #fff;
+    color: #333;
+    width: 280px;
     padding: 30px;
-    border-radius: 15px;
-    background: rgba(30, 21, 42, 0.8);
-    border: 1px solid var(--primary-color);
-    box-shadow: 0 0 20px rgba(58, 12, 163, 0.3);
+    position: relative;
+    /* This creates the pointed shape at the bottom */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
 }
-.flip-card-back {
-    transform: rotateY(180deg);
-    justify-content: space-between;
-}
-.flip-card-front h3 { font-size: 2rem; color: #fff; }
-.flip-card-front .price {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 15px 0;
-    color: #c77dff;
-}
-.price span { font-size: 1.5rem; }
-.price span:last-child { font-size: 1rem; color: rgba(255, 255, 255, 0.7); }
-.hover-prompt {
-    margin-top: 20px;
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.flip-card-back h3 { font-size: 1.5rem; margin-bottom: 15px; color: #fff;}
-.flip-card-back ul { list-style: none; padding: 0; text-align: left; width: 100%; margin: 0;}
-.flip-card-back ul li { margin-bottom: 10px; color: rgba(255, 255, 255, 0.8); }
-.flip-card-back ul i { color: #4cc9f0; margin-right: 10px; }
-.flip-card-back ul i.fa-times { color: #f72585; }
-.flip-card-back .cta-button {
+.card-top-bar {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
-    margin-top: 15px;
-    background-color: var(--primary-color);
-}
-.flip-card.featured .flip-card-back .cta-button {
-    background: linear-gradient(45deg, #c77dff, #f72585);
+    height: 40px;
+    background: var(--primary-color); /* YOUR BRAND COLOR! */
+    border-radius: 8px 8px 0 0;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
 }
 
-.trust-badges-section {
-    padding: 50px 0 100px 0;
+.popular-badge-alt {
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.card-main-content h3 {
+    font-size: 1.8rem;
+    color: #120c18;
+}
+.card-main-content .price {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 10px 0 5px 0;
+    color: #333;
+}
+.card-main-content .price-period {
+    color: #666;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.card-main-content .cta-button {
+    background-color: var(--primary-color);
+    width: 100%;
     text-align: center;
 }
-.trust-badges-section .container {
+
+.card-laurels {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150%; /* Make laurels wider than the card */
+    z-index: -1;
+}
+.card-laurels img {
+    width: 100%;
+}
+.award-card.featured .card-laurels {
+    bottom: -60px;
+    width: 180%;
+}
+
+/* Trust Badges at the bottom */
+.trust-badges-alt {
+    margin-top: 150px; /* Space above the badges */
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 80px;
     flex-wrap: wrap;
 }
-.trust-badge { color: #fff; }
-.trust-badge img { height: 80px; margin-bottom: 15px; }
+.badge-item {
+    text-align: center;
+}
+.badge-item img {
+    height: 70px;
+    margin-bottom: 10px;
+}
+.badge-item p {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .award-grid {
+        flex-direction: column;
+        gap: 80px;
+    }
+}
